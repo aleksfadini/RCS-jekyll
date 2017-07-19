@@ -1,0 +1,61 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: 'Dosis', sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$heavy-font-weight: 900;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+$baseurl: {{ site.baseurl }};
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$slightly-transparent-white: rgba(255, 255, 255, 0.84);
+$background-color: #fdfdfd;
+$brand-color:      #909090;
+$wrapper-heading-color: #2E3842;
+$wrapper-text-color: #4E4852;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    1200px;
+
+$mobile:           320px;
+$on-palm:          600px;
+$on-laptop:        800px;
+$desktop:          1000px;
+$widescreen:       1200px;
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (min-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting",
+        "font-awesome.min"
+;

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    {% include mediahead.html %}
+
+    <body>
+        {% include menu.html %}
+        
+        {% include little-header.html %}
+        
+        <div class="wrapper5">
+          {{ content }}
+        </div>
+
+    {% include footer.html %}
+
+        <script>
+        if (window.innerWidth < 600) {
+          var width = 180;
+        } else {
+          var width = 400;
+        }
+
+      $('audio,video').mediaelementplayer({
+        audioWidth: width,
+        success: function(player, node) {
+          $('#' + node.id + '-mode').html('mode: ' + player.pluginType);
+        },
+        startLanguage: 'en',
+        translationSelector: true
+      });
+    </script>
+    </body>
+</html> 
