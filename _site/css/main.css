@@ -758,7 +758,7 @@ body.is-loading #banner:after {
           display: inline; } }
 
 #side-menu {
-  box-shadow: -2px 2px 2px #b1b1b1;
+  box-shadow: -2px 2px 2px #62288e;
   box-sizing: border-box;
   -webkit-transition: all .4s ease;
   -moz-transition: all .4s ease;
@@ -767,7 +767,15 @@ body.is-loading #banner:after {
   transition: all .4s ease;
   padding: 48px 32px;
   width: 160px;
-  background: rgba(134, 134, 134, 0.8);
+  /* background: rgba(30,2,51, 0.9);  */
+  background: -webkit-linear-gradient(left, rgba(30, 2, 51, 0.5), #1e0233);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(30, 2, 51, 0.5), #1e0233);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(30, 2, 51, 0.5), #1e0233);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(30, 2, 51, 0.5), #1e0233);
+  /* Standard syntax (must be last) */
   padding-top: 40px;
   z-index: 10;
   height: 100vh;
