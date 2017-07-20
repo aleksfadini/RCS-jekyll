@@ -158,7 +158,6 @@ display: none;}
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
 }
 
@@ -332,7 +331,7 @@ display: none;}
         position: absolute;
         width: 100%;
         height: 100%;
-        background: rgba(70, 0, 170, 1);
+        background: rgba(57, 13, 80, 1);
         -webkit-transition: background 3s ease-in-out;
         -moz-transition: background 3s ease-in-out;
         -o-transition: background 3s ease-in-out;
@@ -340,7 +339,7 @@ display: none;}
         transition: background 3s ease-in-out;
 
         &.invisible {
-            background: rgba(70, 0, 170, 0);
+            background: rgba(57, 13, 80, 0);
         }
     }
 
@@ -348,7 +347,7 @@ display: none;}
     opacity: 0.7;
         z-index: 10000;
         width: 15em;
-                top: 35%;
+                top: 55%;
         @include media-query($on-palm) {
             width: 30em;
                     top: 57%;    
@@ -629,7 +628,7 @@ opacity: 1;
   }
 
   .miniarrow {
-                background-image: url("/assets/icons/arrow.svg");
+                background-image: url($baseurl + "/assets/icons/arrow.svg");
                 background-position: cover;
                 background-repeat: no-repeat;
                 background-size:100%;
@@ -710,7 +709,7 @@ opacity:1;
 
         a {
             &:after {
-                background-image: url("/assets/icons/bars.svg");
+                background-image: url($baseurl + "/assets/icons/bars.svg");
                 background-position: center;
                 background-repeat: no-repeat;
                 content: '';
@@ -813,7 +812,7 @@ opacity:1;
         box-sizing: border-box;
         width: 100%;
         color: white;
-        background: rgba(70, 0, 170, 1);
+        background: rgba(57, 13, 80, 1);
         text-align: center;
         padding: $spacing-unit ($spacing-unit / 2);
 
@@ -877,146 +876,67 @@ opacity:1;
 *
 *****/
 
-.first {
-    display: -webkit-flex;
+.flexcontainer1, .flexcontainer2, .flexcontainer3 .flexcontainer4  {
     display: flex;
-    -webkit-flex-direction: column;
-    flex-direction: column;
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+.flexcontainer1 {
+    background: $colorL;
+}
+
+
+.flexcontainer2 {
+    background: $colorM;
+    flex-direction: column-reverse;
     @include media-query($desktop) {
         flex-direction: row;
-        -webkit-flex-direction: row;
-    }
-
-
-    .image {
-                -webkit-flex: auto;
-                flex: auto;
-    }
-
-    .excerpt {
-        -webkit-flex: auto;
-        flex: auto;
-        box-sizing: border-box;
-        width: 100%;
-                @include media-query($desktop) {
-        width: 60%;
-    }
-        color: white;
-        background: rgba(65, 5, 165, 1);
-        text-align: center;
-        padding: $spacing-unit ($spacing-unit / 2);
-
-
-
-        h2 {
-            text-shadow: 0px 0px 8px #040404;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-
-        a {
-            color: white;
-            text-decoration: underline;
-        }
-
-
-    }
+    };
 }
 
-.second {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    flex-direction: column;
+
+.flexcontainer3 {
+    background: $colorD;
+}
+
+
+.flexcontainer4 {
+    background: $colorXD;
+}
+
+
+.flexitem {
+}
+.flex-item img{
+    flex-grow:0;
+    flex-shrink:0;
+}
+
+
+.imgbox {
+        flex-grow:0;
+    flex-shrink:0;
+    width:30em;
+    margin: 0;
+}
+
+.titlebox {
+    color: white;
+        margin: 2em;
+    text-align: center;
     @include media-query($desktop) {
-        flex-direction: row-reverse;
-        -webkit-flex-direction: row-reverse;
-    }
+        margin: auto;
+    };
 
-
-    .image {
-                -webkit-flex: auto;
-                flex: auto;
-    }
-
-    .excerpt {
-        -webkit-flex: auto;
-        flex: auto;
-        box-sizing: border-box;
-        width: 100%;
-        @include media-query($desktop) {
-        width: 60%;
-    }
-
-        color: white;
-        text-align: center;
-        padding: $spacing-unit ($spacing-unit / 2);
-        background: rgba(70, 0, 170, 1);
-
-
-
-        h2 {
-            text-shadow: 0px 0px 8px #040404;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-
-        a {
-            color: white;
-            text-decoration: underline;
-        }
-
-
-    }
-}
- 
-         .newstext
-        {
-            margin: 1em auto 1em auto;
-            max-width: 30em;
-            @include media-query($desktop) {
-            margin: 4em auto 0em auto;
-            max-width: 40em;
-            }
-
-        }
-
-.newsimage1 {
-    margin: auto;
-    background-image: url($baseurl +"/assets/images/banner2.jpg"); 
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 300px;
-    height: 500px;
-    @include media-query($on-palm) {
-        width: 500px;
-    }    
 }
 
-.newsimage2 {
-    margin: auto;
-    width: 300px;
-    height: 500px;
-    @include media-query($on-palm) {
-        width: 500px;
-    }
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-    background-image: url($baseurl +"/assets/images/streetcorner.jpg");
-}
 
-.first, .second {
-                text-shadow: 0px 0px 2px #040404;
-}
 
 
 .site-footer {
     position: relative;
-    background: #1d242a;
+    background: $colorXD;
     color: white;
     text-align: center;
     font-size: 12px;
@@ -1070,7 +990,7 @@ opacity:1;
 
     #footer {
         margin: auto;
-        background-color: #1d242a;
+        background-color: $colorXD;
         text-align: center;
     }
 
@@ -1088,7 +1008,7 @@ opacity:1;
 
         #footer .copyright {
             color: rgba(255, 255, 255, 0.5);
-            font-size: 0.5em; /* was 0.8, I made it smaller */
+            font-size: 0.7em; /* was 0.8, I made it smaller */
             letter-spacing: 0.225em;
             list-style: none;
             padding: 0;

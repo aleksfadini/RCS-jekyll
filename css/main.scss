@@ -23,9 +23,15 @@ $brand-color:      #909090;
 $wrapper-heading-color: #2E3842;
 $wrapper-text-color: #4E4852;
 
+
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
+
+$colorL: #62288e;
+$colorM: #390d50;
+$colorD: #1e0233;
+$colorXD: #0e0119;
 
 // Width of the content area
 $content-width:    1200px;
