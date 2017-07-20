@@ -884,6 +884,10 @@ body.is-loading #banner:after {
   display: flex;
   align-items: center;
   flex-wrap: wrap; }
+  .flexcontainer1 h1, .flexcontainer1 h2, .flexcontainer1 h3, .flexcontainer2 h1, .flexcontainer2 h2, .flexcontainer2 h3, .flexcontainer3 .flexcontainer4 h1, .flexcontainer3 .flexcontainer4 h2, .flexcontainer3 .flexcontainer4 h3 {
+    text-shadow: 0px 0px 3px white; }
+  .flexcontainer1 p, .flexcontainer2 p, .flexcontainer3 .flexcontainer4 p {
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.84); }
 
 .flexcontainer1 {
   background: #62288e; }

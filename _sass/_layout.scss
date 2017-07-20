@@ -880,6 +880,12 @@ opacity:1;
     display: flex;
     align-items: center; 
     flex-wrap: wrap;
+    h1, h2, h3 {
+    text-shadow: 0px 0px 3px white;
+    }
+    p {
+    text-shadow: 0px 0px 1px $slightly-transparent-white;
+    }
 }
 
 .flexcontainer1 {
@@ -915,24 +921,21 @@ opacity:1;
 
 
 .imgbox {
-        flex-grow:0;
+    flex-grow:0;
     flex-shrink:0;
     width:30em;
     margin: 0;
 }
 
 .titlebox {
+
     color: white;
-        margin: 2em;
+    margin: 2em;
     text-align: center;
     @include media-query($desktop) {
         margin: auto;
-    };
-
+    }
 }
-
-
-
 
 .site-footer {
     position: relative;
