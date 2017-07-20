@@ -768,13 +768,13 @@ body.is-loading #banner:after {
   padding: 48px 32px;
   width: 160px;
   /* background: rgba(30,2,51, 0.9);  */
-  background: -webkit-linear-gradient(left, rgba(30, 2, 51, 0.5), #1e0233);
+  background: -webkit-linear-gradient(left, rgba(30, 2, 51, 0.7), #1e0233);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, rgba(30, 2, 51, 0.5), #1e0233);
+  background: -o-linear-gradient(right, rgba(30, 2, 51, 0.7), #1e0233);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, rgba(30, 2, 51, 0.5), #1e0233);
+  background: -moz-linear-gradient(right, rgba(30, 2, 51, 0.7), #1e0233);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, rgba(30, 2, 51, 0.5), #1e0233);
+  background: linear-gradient(to right, rgba(30, 2, 51, 0.7), #1e0233);
   /* Standard syntax (must be last) */
   padding-top: 40px;
   z-index: 10;
@@ -918,12 +918,14 @@ body.is-loading #banner:after {
   flex-shrink: 0; }
 
 .imgbox {
-  flex-grow: 0;
-  flex-shrink: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
   width: 30em;
   margin: 0; }
 
 .titlebox {
+  flex-grow: 1;
+  flex-shrink: 1;
   color: white;
   margin: 2em;
   text-align: center; }
