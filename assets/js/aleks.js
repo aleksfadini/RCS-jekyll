@@ -62,7 +62,8 @@ $('#morearrow').click(function() {
     $('.my-menu .button').click(function(e) {
         e.preventDefault;
         e.stopPropagation;
-        $('#side-menu').toggleClass('visible');
+        $('.my-menu').removeClass('hidden');   // menu bar becomes visible when clicking on menu
+        $('#side-menu').toggleClass('visible');   // side bar becomes visible when clicking on menu
     });
 
 //border effect on title

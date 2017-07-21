@@ -532,13 +532,13 @@ pre {
       height: 0; }
     .big-header #title::before {
       z-index: 10000;
-      border-top: 5px solid transparent;
+      border-top: 5px solid blue;
       border-radius: 15px;
       top: 0;
       left: 0; }
     .big-header #title::after {
       z-index: 10000;
-      border-bottom: 5px solid transparent;
+      border-bottom: 5px solid blue;
       border-radius: 15px;
       bottom: 5.5rem;
       right: 0; }
@@ -780,7 +780,7 @@ body.is-loading #banner:after {
   z-index: 10;
   height: 100vh;
   position: fixed;
-  right: -160px;
+  right: -165px;
   top: 0; }
   #side-menu.visible {
     right: 0px; }

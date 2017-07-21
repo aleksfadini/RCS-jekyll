@@ -315,7 +315,7 @@ display: none;}
     background-position: 55% 20%;
     @include media-query($on-palm) {
         background-size: cover;
-            background-position: 55% 20%;
+        background-position: 55% 20%;
     }
     @include media-query($desktop) {
     background-size: cover;
@@ -429,7 +429,7 @@ display: none;}
 
             &::before {
                     z-index: 10000;
-                border-top: 5px solid transparent;
+                border-top: 5px solid blue;
                 border-radius: 15px;
                 top: 0;
                 left: 0;
@@ -437,7 +437,7 @@ display: none;}
 
             &::after {
                     z-index: 10000;
-                border-bottom: 5px solid transparent;
+                border-bottom: 5px solid blue;
                 border-radius: 15px;
                 bottom: 5.5rem;
                 @include media-query($on-palm) {
@@ -760,7 +760,7 @@ opacity:1;
     z-index: 10;
     height: 100vh;
     position: fixed;
-    right: -($side-menu-width);
+    right: -($side-menu-width)-5px;
     top: 0;
     
     &.visible {
